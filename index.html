@@ -1,24 +1,271 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-S3-M14</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 14: Mi Primer Widget "Vivo"</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes se introduzcan en los fundamentos de HTML (estructura) y CSS (estilo).</li>
+                                        <li>Que utilicen Vibe Coding para generar el código de un 'widget' visual en un Plugin de ThingSpeak.</li>
+                                        <li>Que aprendan a usar los 'placeholders' de ThingSpeak para conectar el widget con los datos de su canal.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Exploración conceptual de HTML/CSS y el mecanismo de Plugins/Placeholders en ThingSpeak.</li>
+                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (DISEÑO FRONTEND):</strong> Ideación, Vibe Coding, e implementación de un widget de datos personalizado.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de widgets y reflexión sobre el diseño de información.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Plugin de ThingSpeak funcional que muestra un widget personalizado (HTML/CSS).</li>
+                                        <li>El widget debe mostrar correctamente al menos un dato dinámico de su canal utilizando un placeholder.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de ThingSpeak con un canal enviando datos activamente.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-7).</li>
+                                        <li>Por equipo de 2: Acceso a una computadora para editar el Plugin de ThingSpeak.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Verificación del Entorno Digital:</strong>
+                                            <ul>
+                                                <li>Asegurarse de que los canales de ThingSpeak de los estudiantes estén recibiendo datos de la misión anterior.</li>
+                                                <li>Familiarizarse con la creación y edición de Plugins en ThingSpeak.</li>
+                                                <li>Tener a mano la sintaxis exacta de los placeholders de ThingSpeak.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar los conceptos básicos de HTML (etiquetas `<div>`, `<p>`) y CSS (selectores de clase, propiedades como `background-color`, `font-size`).</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un widget de "Termómetro Digital" completamente funcional en un Plugin para mostrar como ejemplo claro del objetivo final.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono de la sesión, activar la IA y presentar el rol de diseñador de interfaces.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la importancia de la visualización de datos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Buenos días, desarrolladores. Ya son expertos enviando datos a la nube. Pero los datos en una tabla son solo números. El verdadero poder está en la visualización, en transformar esos números en una historia que un humano pueda entender de un vistazo. Hoy, se convertirán en diseñadores de interfaces. Crearán su primer 'widget' para dar vida a sus datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como es habitual, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy Elena, perfil Comunicador, y me interesa el diseño de información. Lista para la Misión 14.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: A.I. GYM (HTML/CSS y Widgets) ⏰ 10 minutos</h2>
+                <p>Construir el andamiaje conceptual sobre los lenguajes de la web y la funcionalidad de los Plugins de ThingSpeak.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Investigación sobre HTML y CSS</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen los cimientos de la web.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Su investigación con Xolo hoy es sobre los cimientos de la web. De forma individual, usen este prompt: <strong>'Xolo, explícame qué es HTML y qué es CSS usando la analogía de un esqueleto y un diseñador de modas.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Plugins y Placeholders de ThingSpeak</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador guía la siguiente consulta, enfocada en la herramienta específica del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, veamos cómo aplicar esto en nuestra plataforma. Pregúntenle a Xolo: <strong>'¿Cómo funcionan los 'Plugins' y los 'placeholders' de ThingSpeak para crear visualizaciones que se actualizan solas?'</strong> Entender este mecanismo es la clave de la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: Brain Spark (Diseño de Widgets) ⏰ 22 minutos</h2>
+                <p>Los estudiantes diseñan, implementan y depuran su primera visualización de datos personalizada.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 5) El facilitador presenta el desafío de diseño de frontend.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, su misión de diseño. Formen sus parejas. Su desafío es diseñar la 'vibe' de un widget simple para visualizar uno de los datos que su Micro:bit está enviando. Piensen en una tarjeta de estado, un indicador o un medidor. Describan no solo qué información debe mostrar, sino también cómo quieren que se vea.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Vibe Coding y Generación de Frontend</h3>
+                            <p>(Proyectar Diapositiva 6) Las parejas definen su 'vibe' y colaboran con Xolo para obtener el código HTML/CSS.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Describan su diseño a Xolo. Sean específicos. Por ejemplo: <strong>'Xolo, vibe de termómetro digital: una caja azul con bordes redondeados. Adentro, el título 'Temperatura:' y debajo, en grande, el valor de nuestro Campo 1.'</strong> Xolo les generará el código HTML y CSS combinado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Placeholders</h3>
+                             <p>(Proyectar Diapositiva 7) Las parejas implementan el código en un Plugin y aprenden a depurar la conexión de datos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen este código en un nuevo Plugin dentro de ThingSpeak. Deberán reemplazar el ID del canal en el 'placeholder'. Si ven el texto del placeholder en lugar del dato, es un error de depuración común. Describan el problema a Xolo: <strong>'Xolo, nuestro widget muestra el código del placeholder, no el número.'</strong> Él los guiará para verificar la sintaxis y el ID de su canal."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Gnius STORM (Reflexión sobre Diseño de Información) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en la importancia de la visualización de datos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>Los alumnos reflexionan individualmente sobre formas alternativas de visualización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos a nuestro cierre. Primero, un minuto de reflexión individual. Piensen: ¿qué otra forma visual podrían haber usado para representar el dato de su sensor? ¿Una barra de progreso? ¿Un color de fondo que cambia? ¿Un emoji?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
+                            <p>Los alumnos discuten en parejas sobre el impacto de una buena visualización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, en parejas, discutan por qué una buena visualización puede hacer que los datos sean más impactantes y fáciles de entender que una simple tabla de números. ¿A quién le sirve más su widget que la tabla de datos crudos? Tienen dos minutos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
+                            <p>Algunas parejas comparten su diseño y el facilitador cierra la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Escuchemos de algunas parejas. Compartan el diseño de su widget y expliquen por qué creen que es una forma efectiva de comunicar la información de su sensor. (Escuchar 2-3 respuestas). Excelente. Hoy han dado su primer paso como desarrolladores Front-End. Han aprendido a estructurar y dar estilo al contenido, y lo más importante, han conectado una interfaz visual a un flujo de datos del mundo real. Han hecho que sus datos 'hablen' un lenguaje humano. En las próximas misiones, haremos que estas interfaces sean aún más dinámicas e interactivas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
